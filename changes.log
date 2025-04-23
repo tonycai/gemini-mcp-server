@@ -1,0 +1,19 @@
+## Changes Log (2025-04-23)
+
+1. Created new files:
+   - mcp.json: MCP protocol definition for Claude CLI integration
+   - gemini_server.py: Python implementation of MCP server for Gemini AI
+   - gemini.sh: Bash wrapper script for easier execution
+   - README.md: Documentation with setup and usage instructions
+
+2. Key implementations:
+   - MCP protocol support with standardized JSON response format
+   - Command-line argument parsing for MCP commands
+   - Error handling and formatted JSON responses
+   - Support for multiple Gemini models
+   - Environment variable configuration for API key
+
+3. Original files preserved:
+   - genai.py: Original implementation (kept for reference)
+   - project-goal.md: Project requirements
+   - user-story.md: Integration scenarios documentation
