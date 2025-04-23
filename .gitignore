@@ -1,0 +1,19 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.env/
+
+# API keys and sensitive info
+.env
+
+# Local development files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
