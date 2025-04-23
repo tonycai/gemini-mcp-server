@@ -1,0 +1,51 @@
+{
+  "name": "gemini",
+  "version": "0.2.0",
+  "description": "Google Gemini AI integration for Claude CLI",
+  "type": "stdio",
+  "command": "python",
+  "args": [
+    "/root/mcp-servers/gemini_server/mcp_gemini_server.py"
+  ],
+  "env": {
+    "GOOGLE_API_KEY": "${GOOGLE_API_KEY}"
+  },
+  "commands": [
+    {
+      "name": "gemini",
+      "description": "Generate content using Google's Gemini AI model",
+      "parameters": [
+        {
+          "name": "prompt",
+          "type": "string",
+          "description": "The prompt to send to Gemini AI",
+          "required": true
+        },
+        {
+          "name": "model",
+          "type": "string",
+          "description": "The Gemini model to use",
+          "required": false,
+          "default": "gemini-2.5-pro-preview-03-25"
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "description": "Generate a simple explanation of quantum physics",
+      "command": "gemini",
+      "parameters": {
+        "prompt": "Explain quantum physics in simple terms"
+      }
+    },
+    {
+      "description": "Use Gemini 1.5 Pro model to generate creative content",
+      "command": "gemini",
+      "parameters": {
+        "prompt": "Write a short poem about AI and humanity",
+        "model": "gemini-1.5-pro"
+      }
+    }
+  ]
+}
