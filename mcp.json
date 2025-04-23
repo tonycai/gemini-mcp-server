@@ -1,0 +1,26 @@
+{
+  "name": "gemini",
+  "version": "0.1.0",
+  "description": "Google Gemini AI integration for Claude CLI",
+  "commands": [
+    {
+      "name": "gemini",
+      "description": "Generate content using Google's Gemini AI model",
+      "parameters": [
+        {
+          "name": "prompt",
+          "type": "string",
+          "description": "The prompt to send to Gemini AI",
+          "required": true
+        },
+        {
+          "name": "model",
+          "type": "string",
+          "description": "The Gemini model to use",
+          "required": false,
+          "default": "gemini-2.5-pro-preview-03-25"
+        }
+      ]
+    }
+  ]
+}
